@@ -8,7 +8,8 @@ import Messages from "./Messages";
 import icon from "../images/logo.svg";
 import styles from "../styles/Chat.module.css";
 
-const socket = io.connect("http://localhost:5000");
+const DEPLOY_LINK = "https://online-chat-zk62.onrender.com"
+const socket = io.connect(DEPLOY_LINK);
 
 const Chat = () => {
   const navigate = useNavigate()
